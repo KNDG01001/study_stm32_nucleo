@@ -11,7 +11,8 @@
 
 
 
-void apInit(void){
+void apInit(void)
+{
   GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
@@ -26,12 +27,11 @@ void apInit(void){
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
 }
 
 void apMain(void){
   while(1){
-    HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_12);
+    ledToggle(_DEF_LED1);
     delay(500);
   }
 }

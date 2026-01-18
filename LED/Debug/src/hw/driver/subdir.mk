@@ -5,23 +5,23 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../src/main.c 
+../src/hw/driver/led.c 
 
 OBJS += \
-./src/main.o 
+./src/hw/driver/led.o 
 
 C_DEPS += \
-./src/main.d 
+./src/hw/driver/led.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-src/%.o src/%.su src/%.cyclo: ../src/%.c src/subdir.mk
+src/hw/driver/%.o src/hw/driver/%.su src/hw/driver/%.cyclo: ../src/hw/driver/%.c src/hw/driver/subdir.mk
 	arm-none-eabi-gcc "$<" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32F103xB -c -I"C:/Users/Sunbi/Desktop/exam_arm/LED/src" -I"C:/Users/Sunbi/Desktop/exam_arm/LED/src/bsp" -I"C:/Users/Sunbi/Desktop/exam_arm/LED/src/ap" -I"C:/Users/Sunbi/Desktop/exam_arm/LED/src/common" -I"C:/Users/Sunbi/Desktop/exam_arm/LED/src/hw" -I"C:/Users/Sunbi/Desktop/exam_arm/LED/src/lib" -I"C:/Users/Sunbi/Desktop/exam_arm/LED/src/lib/cube_f103/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Users/Sunbi/Desktop/exam_arm/LED/src/lib/cube_f103/Drivers/CMSIS/Include" -I"C:/Users/Sunbi/Desktop/exam_arm/LED/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Users/Sunbi/Desktop/exam_arm/LED/src/common/hw/include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfloat-abi=soft -mthumb -o "$@"
 
-clean: clean-src
+clean: clean-src-2f-hw-2f-driver
 
-clean-src:
-	-$(RM) ./src/main.cyclo ./src/main.d ./src/main.o ./src/main.su
+clean-src-2f-hw-2f-driver:
+	-$(RM) ./src/hw/driver/led.cyclo ./src/hw/driver/led.d ./src/hw/driver/led.o ./src/hw/driver/led.su
 
-.PHONY: clean-src
+.PHONY: clean-src-2f-hw-2f-driver
 

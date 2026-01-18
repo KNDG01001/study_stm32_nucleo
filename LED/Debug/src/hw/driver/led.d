@@ -1,5 +1,5 @@
-src/ap/ap.o: ../src/ap/ap.c ../src/ap/ap.h \
- C:/Users/Sunbi/Desktop/exam_arm/LED/src/hw/hw.h \
+src/hw/driver/led.o: ../src/hw/driver/led.c \
+ C:/Users/Sunbi/Desktop/exam_arm/LED/src/common/hw/include/led.h \
  C:/Users/Sunbi/Desktop/exam_arm/LED/src/hw/hw_def.h \
  C:/Users/Sunbi/Desktop/exam_arm/LED/src/common/def.h \
  C:/Users/Sunbi/Desktop/exam_arm/LED/src/bsp/bsp.h \
@@ -24,11 +24,8 @@ src/ap/ap.o: ../src/ap/ap.c ../src/ap/ap.h \
  C:/Users/Sunbi/Desktop/exam_arm/LED/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h \
  C:/Users/Sunbi/Desktop/exam_arm/LED/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h \
  C:/Users/Sunbi/Desktop/exam_arm/LED/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
- C:/Users/Sunbi/Desktop/exam_arm/LED/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
- C:/Users/Sunbi/Desktop/exam_arm/LED/src/common/hw/include/led.h \
- C:/Users/Sunbi/Desktop/exam_arm/LED/src/hw/hw_def.h
-../src/ap/ap.h:
-C:/Users/Sunbi/Desktop/exam_arm/LED/src/hw/hw.h:
+ C:/Users/Sunbi/Desktop/exam_arm/LED/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+C:/Users/Sunbi/Desktop/exam_arm/LED/src/common/hw/include/led.h:
 C:/Users/Sunbi/Desktop/exam_arm/LED/src/hw/hw_def.h:
 C:/Users/Sunbi/Desktop/exam_arm/LED/src/common/def.h:
 C:/Users/Sunbi/Desktop/exam_arm/LED/src/bsp/bsp.h:
@@ -54,5 +51,3 @@ C:/Users/Sunbi/Desktop/exam_arm/LED/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driv
 C:/Users/Sunbi/Desktop/exam_arm/LED/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h:
 C:/Users/Sunbi/Desktop/exam_arm/LED/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
 C:/Users/Sunbi/Desktop/exam_arm/LED/src/lib/cube_f103/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
-C:/Users/Sunbi/Desktop/exam_arm/LED/src/common/hw/include/led.h:
-C:/Users/Sunbi/Desktop/exam_arm/LED/src/hw/hw_def.h:
