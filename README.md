@@ -13,7 +13,7 @@ STM32 Nucleo 보드로 진행한 실습/예제 모음 (STM32CubeIDE 기준)
 - Toolchain: IDE 기본 GCC / ST-LINK (기본)
 
 ## How to build & flash (STM32CubeIDE)
-1. 이 레포 클론
+1. 레포 클론
    ```bash
    git clone https://github.com/KNDG01001/study_stm32_nucleo.git
    ```
